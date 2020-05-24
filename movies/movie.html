@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>豆瓣</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        /* #bannerlist{
+            height: 400px;
+        } */
+        #bannerlist img{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            padding-top: 50px;
+        }
+        #movielist p{
+            text-align: center;
+            height: 10%;
+        }
+        #movielist img{
+            height: 405px;
+            max-width: 100%;
+            /* padding: 2rem; */
+        }
+        #movielist p strong{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航条 -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navlist" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">豆瓣影城</a>
+            </div>
+
+            <!-- 导航条列表 -->
+            <div class="collapse navbar-collapse" id="navlist">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">首页</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">列表<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">联系方式</a></li>
+                            <li><a href="#">地址</a></li>
+                            <li><a href="#">好莱坞</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">国产电影</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">关于</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav><!--导航条结束-->
+
+    <!-- 轮播图 -->
+    <div class="carousel slide" data-ride="carousel" id="bannerlist">
+        <!-- 轮播图的指示灯 -->
+        <ol class="carousel-indicators">
+            <li data-target="#bannerlist" data-slide-to="0" class="active"></li>
+            <li data-target="#bannerlist" data-slide-to="1"></li>
+            <li data-target="#bannerlist" data-slide-to="2"></li>
+        </ol>
+        <!-- 轮播图图片 -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="img/carousel0.jpg" alt="">
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/carousel1.jpg" alt="">
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/carousel2.jpg" alt="">
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+            
+            <!-- 轮播图控制器 -->
+            <a href="#bannerlist" class="left carousel-control" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">前一个</span>
+            </a>
+            <a href="#bannerlist" class="right carousel-control" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">下一个</span>
+            </a>
+        </div>
+    </div><!-- 轮播图结束 -->
+
+    <!-- 标签页 -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active"><a href="#hot" role="tab" data-toggle="tab">热门</a></li>
+        <li><a href="#new" role="tab" data-toggle="tab">最新</a></li>
+    </ul>
+
+    <!-- 标签内容 -->
+    <div class="tab-content" id="movielist">
+
+
+        <!-- 热门电影 -->
+        <div class="tab-pane active" id="hot">
+            <div class="row">
+                <div class="col-md-2 col-md-offset-1">
+                    <img src="img/movie0.jpg" alt="" class="text-center">
+                    <span><p>绅士们<strong>8.3</strong></p></span>
+                </div>
+                <div class="col-md-2">
+                    <img src="img/movie1.jpg" alt="" class="text-center">
+                    <span><p>饥饿站台<strong>8.3</strong></p></span>
+                </div>
+                <div class="col-md-2">
+                    <img src="img/movie2.jpg" alt="">
+                    <span><p>饥饿站台<strong>8.3</strong></p></span>
+                </div>
+                <div class="col-md-2">
+                    <img src="img/movie3.jpg" alt="">
+                    <span><p>饥饿站台<strong>8.3</strong></p></span>
+                </div>
+                <div class="col-md-2">
+                    <img src="img/movie4.jpg" alt="">
+                    <span><p>饥饿站台<strong>8.3</strong></p></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-md-offset-1">
+                    <img src="img/movie5.jpg" alt="">
+                    <span><p>绅士们<strong>8.3</strong></p></span>
+                </div>
+                <div class="col-md-2">
+                    <img src="img/movie6.jpg" alt="">
+                    <span><p>饥饿站台<strong>8.3</strong></p></span>
+                </div>
+                <div class="col-md-2">
+                    <img src="img/movie7.jpg" alt="">
+                    <span><p>饥饿站台<strong>8.3</strong></p></span>
+                </div>
+                <div class="col-md-2">
+                    <img src="img/movie8.jpg" alt="">
+                    <span><p>饥饿站台<strong>8.3</strong></p></span>
+                </div>
+                <div class="col-md-2">
+                    <img src="img/movie9.jpg" alt="">
+                    <span><p>饥饿站台<strong>8.3</strong></p></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 最新电影 -->
+        <div class="tab-pane" id="new">
+            
+
+        </div>
+        <hr>
+        <p style="text-align: center;color: #ccc;">@copyright天羽集团</p>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        var movies=""
+        $.ajax({
+            url:'https://douban.uieee.com/v2/movie/in_theaters',
+            type:'get',
+            success:function(res){
+                console.log(res)
+                movies=res.subjects
+                var len = movies.length
+                var row=document.createElement("div")
+                row.className="row"
+                for(var i=0;i<len;i++){
+                    $("#new").append(row)
+                    // document.getElementById("new").appendChild(row)
+                    var col=document.createElement("div")
+                    col.className="col-md-2"
+                    var image=document.createElement("img")
+                    image.src=movies[i].images.small
+                    row.appendChild(col)
+                    col.appendChild(image)
+                    var name=document.createElement("span")
+                    col.appendChild(name)
+                    var title=document.createElement("p")
+                    name.appendChild(title)
+                    title.innerHTML=movies[i].title
+                    var avr=document.createElement("strong")
+                    avr.innerHTML=movies[i].rating.average
+                    title.appendChild(avr)
+                    // console.log(movies[i].rating.average)
+                }
+                
+            }
+        })
+    </script>
+</body>
+</html>
