@@ -1,0 +1,358 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav,
+.mobile_product,
+#footer {
+    display: none;
+}
+
+#pc_top {
+    width: 1080px;
+    height: 280px;
+    background-color: #F7F7F7;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.banner {
+    width: 321px;
+    height: 173px;
+}
+
+
+/* 文本内容 */
+
+.shoes_text {
+    width: 1080px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(../font/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../font/Roboto-Regular.ttf);
+}
+
+.title {
+    height: 40px;
+    font-size: 34px;
+    font-family: Roboto-Medium;
+    font-weight: 500;
+    color: rgba(33, 33, 33, 1);
+    line-height: 40px;
+}
+
+.maintext {
+    margin-top: 16px;
+    font-size: 16px;
+    font-family: Roboto-Regular;
+    font-weight: 400;
+    color: rgba(119, 119, 119, 1);
+    line-height: 24px;
+}
+
+
+/* 商品区左侧筛选区样式 */
+
+.shops {
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+.filter {
+    width: 196px;
+    margin-right: 24px;
+}
+
+.filter_top {
+    height: 30px;
+    font-size: 16px;
+    font-family: Roboto-Bold, Roboto;
+    font-weight: bold;
+    color: rgba(34, 34, 34, 1);
+    line-height: 30px;
+}
+
+.category {
+    height: 30px;
+    font-size: 12px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: rgba(34, 34, 34, 1);
+    line-height: 30px;
+}
+
+.category_shoes {
+    height: 30px;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.selector {
+    height: 46px;
+    line-height: 46px;
+    border-top: 1px solid #E2E2E2;
+    font-size: 14px;
+    font-family: Roboto-Regular;
+    font-weight: 400;
+    color: rgba(34, 34, 34, 1);
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.range {
+    font-size: 13px;
+    font-family: Roboto-Regular;
+    font-weight: 400;
+    color: rgba(34, 34, 34, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slide {
+    width: 160px;
+    margin: auto;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.slide div {
+    width: 160px;
+    height: 2px;
+    background-color: black;
+}
+
+.slide::before,
+.slide::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.down {
+    display: flex;
+    flex-direction: column;
+}
+
+.down div {
+    height: 46px;
+}
+
+.filter_content>div:last-child {
+    border-bottom: 1px solid #E2E2E2;
+}
+
+.filter_content img {
+    width: 14px;
+    height: 14px;
+    margin-top: 16px;
+}
+
+.filter_bottom {
+    width: 20px;
+    height: 5px;
+    background-color: #D8D8D8;
+    margin: auto;
+    margin-top: 48px;
+}
+
+
+/* 商品区左侧筛选样式结束 */
+
+
+/* 右侧顶部 */
+
+.shopslist_top {
+    width: 860px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scenes_change {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-family: Roboto-Medium;
+    font-weight: 500;
+    color: rgba(204, 204, 204, 1);
+    text-align: center;
+    line-height: 32px;
+}
+
+.scenes_change p {
+    width: 60px;
+    text-align: center;
+    line-height: 32px;
+    height: 32px;
+}
+
+.line {
+    height: 32px;
+    width: 1px;
+    background-color: #D8D8D8;
+}
+
+.scenes_selected {
+    color: rgba(34, 34, 34, 1);
+}
+
+.layout_change {
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.layout_change div {
+    width: 22px;
+    height: 22px;
+}
+
+.single {
+    background-image: url(../image/layout0.png);
+}
+
+.double {
+    background-image: url(../image/layout1.png);
+}
+
+.three {
+    background-image: url(../image/layout2.png);
+}
+
+.selection {
+    width: 166px;
+    height: 32px;
+    border: 1px solid #D8D8D8;
+}
+
+.option_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.option {
+    margin-left: 10px;
+    height: 32px;
+    font-size: 13px;
+    font-family: Roboto-Regular;
+    font-weight: 400;
+    color: rgba(119, 119, 119, 1);
+    line-height: 32px;
+}
+
+.option_icon {
+    height: 32px;
+    line-height: 32px;
+    margin-right: 10px;
+}
+
+.option_icon img {
+    width: 14px;
+    height: 14px;
+}
+
+.results {
+    font-size: 14px;
+    font-family: Roboto-Regular;
+    font-weight: 400;
+    color: rgba(34, 34, 34, 1);
+}
+
+
+/* 右侧顶部结束 */
+
+
+/* 商品列表 */
+
+.formlist {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#hide {
+    display: none;
+}
+
+.formlistsingle {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.shop_box {
+    width: 270px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.shop_box img {
+    width: 100%;
+}
+
+.introduce {
+    font-size: 13px;
+    font-family: Tahoma;
+    color: rgba(119, 119, 119, 1);
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.price {
+    text-align: center;
+}
+
+.price :first-child {
+    font-size: 15px;
+    font-family: Tahoma;
+    color: rgba(33, 33, 33, 1);
+    margin-right: 10px;
+}
+
+.price :last-child {
+    font-size: 15px;
+    font-family: Tahoma;
+    color: rgba(119, 119, 119, 1);
+    text-decoration: line-through;
+}
+
+.single,
+.double,
+.scenes_selected,
+.scenes_not_select,
+.option_box,
+.three:hover {
+    cursor: pointer;
+}

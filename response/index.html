@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css.css" media="screen and (min-width:769px)">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-device-width:768px)">
+</head>
+
+<body>
+    <!-- 移动端的导航栏 -->
+    <div class="nav">
+        <div class="nav_left">
+            <div class="menu">
+
+            </div>
+            <div class="search"></div>
+        </div>
+        <div class="title_text">
+            BELLERIS
+        </div>
+        <div class="nav_right">
+            <div class="mine"></div>
+            <div class="bag">
+                <p>2</p>
+            </div>
+        </div>
+    </div>
+    <!-- 导航栏结束 -->
+
+    <!-- pc顶部图片 -->
+    <div id="pc_top">
+        <div class="banner">
+
+            <img src="image/default-skirt.png" alt="">
+
+        </div>
+    </div>
+
+    <!-- pc中间文本区 -->
+    <div class="shoes_text">
+        <div class="title">
+            Men's Running Shoes
+        </div>
+        <div class="maintext">
+            Attack the pavement, trails or any route with men's running shoes equipped with the latest Nike footwear technologies. Featuring signature styles like the Nike Epic React, Zoom Fly and Pegasus, men's running shoes offer options for all runners and running
+            styles.
+        </div>
+    </div>
+
+
+    <!-- 主体商品展示区 -->
+    <div class="shops">
+        <!-- 左边筛选区 -->
+        <div class="filter">
+            <p class="filter_top">Filter</p>
+            <p class="category">Category</p>
+            <p class="category_shoes">Men's Running Shoes</p>
+            <div class="filter_content">
+                <div class="selector">
+                    <p>Price</p>
+                    <img src="image/down.png" alt="">
+                </div>
+                <div class="slide_box">
+                    <div class="range">
+                        <div>$8.00</div>
+                        <div>$298.00</div>
+                    </div>
+                    <div class="slide">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="selector">
+                    <p>Product Type </p>
+                    <img src="image/right.png" alt="">
+                </div>
+                <div class="selector">
+                    <p>Colour</p>
+                    <img src="image/right.png" alt="">
+                </div>
+                <div class="selector">
+                    <p>Size</p>
+                    <img src="image/right.png" alt="">
+                </div>
+                <div class="selector">
+                    <p>Fit</p>
+                    <img src="image/right.png" alt="">
+                </div>
+                <div class="selector">
+                    <p>Brands</p>
+                    <img src="image/right.png" alt="">
+                </div>
+            </div>
+            <div class="filter_bottom"></div>
+        </div>
+        <!-- 筛选区结束 -->
+
+        <!-- 商品列表区 -->
+        <div class="shopslist">
+            <div class="shopslist_top">
+                <div class="scenes_change">
+                    <p class="scenes_selected" onclick="changeScenes(this)">Product</p>
+                    <div class="line"></div>
+                    <p id="scenes" onclick="changeScenes(this)">Scenes</p>
+                </div>
+                <div class="layout_change">
+                    <div class="three"></div>
+                    <div class="double" onclick="doubleLayout()"></div>
+                    <div class="single" onclick="singleLayout()"></div>
+
+                </div>
+                <div class="selection" onclick="select()">
+                    <div class="option_box">
+                        <div class="option">Best Match</div>
+                        <div class="option_icon">
+                            <img src="image/down.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="results">
+                    315results
+                </div>
+            </div>
+
+            <div class="formlist">
+                <div class="shop_box">
+                    <div>
+                        <img src="image/skirt.png" alt="">
+                    </div>
+                    <div>
+                        <div class="introduce">
+                            Bow Tie Front Stripe Slip Dress
+                        </div>
+                        <div class="mobile_product">
+                            Product Title
+                        </div>
+                        <div class="price">
+                            <span>$256</span><span>$667</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop_box">
+                    <div id="skirt">
+                        <img src="image/skirt.png" alt="">
+                    </div>
+                    <div>
+                        <div class="introduce">
+                            Bow Tie Front Stripe Slip Dress
+                        </div>
+                        <div class="mobile_product">
+                            Product Title
+                        </div>
+                        <div class="price">
+                            <span>$256</span><span>$667</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <div>
+                        <img src="image/skirt.png" alt="">
+                    </div>
+                    <div>
+                        <div class="introduce">
+                            Bow Tie Front Stripe Slip Dress
+                        </div>
+                        <div class="mobile_product">
+                            Product Title
+                        </div>
+                        <div class="price">
+                            <span>$256</span><span>$667</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <div>
+                        <img src="image/skirt.png" alt="">
+                    </div>
+                    <div>
+                        <div class="introduce">
+                            Bow Tie Front Stripe Slip Dress
+                        </div>
+                        <div class="mobile_product">
+                            Product Title
+                        </div>
+                        <div class="price">
+                            <span>$256</span><span>$667</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <div>
+                        <img src="image/skirt.png" alt="">
+                    </div>
+                    <div>
+                        <div class="introduce">
+                            Bow Tie Front Stripe Slip Dress
+                        </div>
+                        <div class="mobile_product">
+                            Product Title
+                        </div>
+                        <div class="price">
+                            <span>$256</span><span>$667</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <div>
+                        <img src="image/skirt.png" alt="">
+                    </div>
+                    <div>
+                        <div class="introduce">
+                            Bow Tie Front Stripe Slip Dress
+                        </div>
+                        <div class="mobile_product">
+                            Product Title
+                        </div>
+                        <div class="price">
+                            <span>$256</span><span>$667</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <div>
+                        <img src="image/skirt.png" alt="">
+                    </div>
+                    <div>
+                        <div class="introduce">
+                            Bow Tie Front Stripe Slip Dress
+                        </div>
+                        <div class="mobile_product">
+                            Product Title
+                        </div>
+                        <div class="price">
+                            <span>$256</span><span>$667</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <div>
+                        <img src="image/skirt.png" alt="">
+                    </div>
+                    <div>
+                        <div class="introduce">
+                            Bow Tie Front Stripe Slip Dress
+                        </div>
+                        <div class="mobile_product">
+                            Product Title
+                        </div>
+                        <div class="price">
+                            <span>$256</span><span>$667</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <div>
+                        <img src="image/skirt.png" alt="">
+                    </div>
+                    <div>
+                        <div class="introduce">
+                            Bow Tie Front Stripe Slip Dress
+                        </div>
+                        <div class="mobile_product">
+                            Product Title
+                        </div>
+                        <div class="price">
+                            <span>$256</span><span>$667</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <div>
+                        <img src="image/skirt.png" alt="">
+                    </div>
+                    <div>
+                        <div class="introduce">
+                            Bow Tie Front Stripe Slip Dress
+                        </div>
+                        <div class="mobile_product">
+                            Product Title
+                        </div>
+                        <div class="price">
+                            <span>$256</span><span>$667</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <div>
+                        <img src="image/skirt.png" alt="">
+                    </div>
+                    <div>
+                        <div class="introduce">
+                            Bow Tie Front Stripe Slip Dress
+                        </div>
+                        <div class="mobile_product">
+                            Product Title
+                        </div>
+                        <div class="price">
+                            <span>$256</span><span>$667</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <div>
+                        <img src="image/skirt.png" alt="">
+                    </div>
+                    <div>
+                        <div class="introduce">
+                            Bow Tie Front Stripe Slip Dress
+                        </div>
+                        <div class="mobile_product">
+                            Product Title
+                        </div>
+                        <div class="price">
+                            <span>$256</span><span>$667</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="formlist" id="hide">
+                <div class="shop_box">
+                    <div>
+                        <img src="image/skirt0.png" alt="">
+                    </div>
+                    <div>
+                        <div class="introduce">
+                            Bow Tie Front Stripe Slip Dress
+                        </div>
+                        <div class="mobile_product">
+                            Product Title
+                        </div>
+                        <div class="price">
+                            <span>$256</span><span>$667</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop_box">
+                    <div id="skirt">
+                        <img src="image/skirt1.png" alt="">
+                    </div>
+                    <div>
+                        <div class="introduce">
+                            Bow Tie Front Stripe Slip Dress
+                        </div>
+                        <div class="mobile_product">
+                            Product Title
+                        </div>
+                        <div class="price">
+                            <span>$256</span><span>$667</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <div>
+                        <img src="image/skirt2.png" alt="">
+                    </div>
+                    <div>
+                        <div class="introduce">
+                            Bow Tie Front Stripe Slip Dress
+                        </div>
+                        <div class="mobile_product">
+                            Product Title
+                        </div>
+                        <div class="price">
+                            <span>$256</span><span>$667</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <div>
+                        <img src="image/skirt3.png" alt="">
+                    </div>
+                    <div>
+                        <div class="introduce">
+                            Bow Tie Front Stripe Slip Dress
+                        </div>
+                        <div class="mobile_product">
+                            Product Title
+                        </div>
+                        <div class="price">
+                            <span>$256</span><span>$667</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <div>
+                        <img src="image/skirt4.png" alt="">
+                    </div>
+                    <div>
+                        <div class="introduce">
+                            Bow Tie Front Stripe Slip Dress
+                        </div>
+                        <div class="mobile_product">
+                            Product Title
+                        </div>
+                        <div class="price">
+                            <span>$256</span><span>$667</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <div>
+                        <img src="image/skirt5.png" alt="">
+                    </div>
+                    <div>
+                        <div class="introduce">
+                            Bow Tie Front Stripe Slip Dress
+                        </div>
+                        <div class="mobile_product">
+                            Product Title
+                        </div>
+                        <div class="price">
+                            <span>$256</span><span>$667</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <div>
+                        <img src="image/skirt6.png" alt="">
+                    </div>
+                    <div>
+                        <div class="introduce">
+                            Bow Tie Front Stripe Slip Dress
+                        </div>
+                        <div class="mobile_product">
+                            Product Title
+                        </div>
+                        <div class="price">
+                            <span>$256</span><span>$667</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <div>
+                        <img src="image/skirt7.png" alt="">
+                    </div>
+                    <div>
+                        <div class="introduce">
+                            Bow Tie Front Stripe Slip Dress
+                        </div>
+                        <div class="mobile_product">
+                            Product Title
+                        </div>
+                        <div class="price">
+                            <span>$256</span><span>$667</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer" class="disappear">
+        <div class="mask">
+        </div>
+        <div id="bottom_area">
+            <div class="bottom_area_text">
+                <div class="close" onclick="closeBottom()"></div>
+                <p>Sort</p>
+            </div>
+            <div class="bottom_area_text">
+                <p>Best Match</p>
+            </div>
+            <div class="bottom_area_text">
+                <p>Newest</p>
+            </div>
+            <div class="bottom_area_text">
+                <p>Price - Low To High</p>
+            </div>
+            <div class="bottom_area_text">
+                <p>Price - High To Low</p>
+            </div>
+            <div class="bottom_area_text" id="xs">
+                <div class="xsline"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
